@@ -1,0 +1,31 @@
+<!--
+<div class="container  p-2  m-2 text-white bg-primary d-flex inline-block">
+  <a class="page-link m-2" href="">Home</a>
+<a class="page-link m-2"href="login">Login</a>
+<a class="page-link m-2" href="sign">Sign up</a>
+<a class="page-link m-2" href="header">Header</a>
+<a class="page-link m-2" href="imageslider">Iamge-Slider</a>
+</div>-->
+<app-header></app-header>
+
+<app-imageslider></app-imageslider>
+<br>
+<br>
+<app-categorychooser></app-categorychooser>
+
+<div class="position-relative" style="z-index: 1;">
+  <div class="position-fixed bottom-0 end-0" id="chatDiv">
+    <div [hidden]="!chatVisible">
+      <app-chatcom></app-chatcom>
+    </div>
+    <p id="chatCon"> <i class="fi fi-sr-comment-alt" id="chat-icon" (click)="changeChatVisible()" ></i></p>
+    
+  </div>
+
+</div>
+
+
+<app-aboutus></app-aboutus>
+<app-footer></app-footer>
+
+  

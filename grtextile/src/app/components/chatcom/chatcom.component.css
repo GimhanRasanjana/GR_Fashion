@@ -1,0 +1,19 @@
+.chatDiv{
+  height:200px ;
+  
+}
+#bodyDiv{
+  padding-right: 10px;
+}
+.msgInput{
+  max-width: 190px;
+}
+.msg-row{
+  width: 100%;
+}
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: scroll
+}

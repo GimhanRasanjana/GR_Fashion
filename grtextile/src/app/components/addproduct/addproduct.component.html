@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="d-flex justify-content-center" style="margin-top:-60px;">
+        <pre style="font-family: 'Anton', sans-serif;font-size: 45px;">
+            <hr>PRODCUT ADDING PAGE<hr>
+        </pre>
+    </div>
+                
+                    <div class="d-flex justify-content-center" style="height:600px;"style="margin-top:-150px;">
+                        <div class="d-inline-block p-2 my-2 " style="width: 450px;">
+                            <div class="d-flex  m-5 rounded-3 border" id="image" style="height: 450px;background-color: #B1B1B1;">
+                                <div class="pt-5 ps-2">
+                                    <form>
+                                        <div>
+                                            <input #singleInput type="file" name="image" id="imageup" (change)="selectImage($event)">
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <button (click)="onUpload()">Upload</button>
+                                        </div> 
+                                    </form>
+                                     
+                                    <pre style="font-weight: bold; font-size:15px;color: black;">  E n t e r  I m a g e</pre>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-inline-block p-2 my-2 " style="width: 450px;">
+                            <div class="card m-2" style="width:400px;height: 550px">
+                                <div class="card-body">
+                                    <form #productRegister="ngForm" (ngSubmit)="onAddProduct(productRegister.value); productRegister.resetForm()">
+                                    <h3 class="card-title text-center"> <input type="text" id="" name="name" placeholder="Enter Product Name" style="width:350px" ngModel></h3>
+                                    <p class="card-text  p-1">
+                                        <input type="text" id="" name="price" placeholder="Enter Price" style="width:250px" ngModel> 
+                                    </p>
+                                    <p class="card-text  p-1">
+                                        <input type="text" id="" name="category" placeholder="Enter Category" style="width:250px" ngModel> 
+                                    </p>
+                                    <p class="card-text p-1">
+                                    <textarea id="prodetails" ngModel name="description">Enter Details Of Product..</textarea>
+                                    </p>
+                                    <p class="card-text  p-1">
+                                        <input type="text" id="" name="brand" placeholder="Enter Brand" style="width:250px" ngModel> 
+                                    </p>
+                                    <p class="card-text  p-1">
+                                        <input type="text" id="" name="material" placeholder="Enter Material" style="width:250px" ngModel> 
+                                    </p>
+                                    <button  type="submit" class="btn btn-block text-white" style="background-color: #001F3D;">A D D &nbsp; P R 0 D U C T</button>
+                                
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            
+        
+    
+   
+    
+</div>
+
+
+
+

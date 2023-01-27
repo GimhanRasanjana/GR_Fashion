@@ -1,0 +1,41 @@
+<div id="bodyDiv">
+  <div class="card text-center">
+    <div class="card-header">
+      Chat With us
+    </div>
+    <div class="card-body">
+      <div class="chatDiv" >
+        <div class="position-relative">
+          <div class="chat-messages" >
+            <div [innerHtml]="chatPanel" >
+              <div class="row d-flex flex-row-reverse m-2 msg-row">
+                
+                <div class="bg-light rounded  col-auto">
+                  <div class="font-weight-bold mb-1">You</div>
+                  res
+                </div>
+              </div>
+              <div class="row d-flex flex-row m-2 msg-row">
+  
+                <div class="bg-light rounded  col-auto">
+                  <div class="font-weight-bold mb-1">Someone</div>
+                    test
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      <form id="form" #chatForm="ngForm" (ngSubmit)="sendButtonClick(chatForm.value); chatForm.resetForm()" class="form-inline">
+        <div class="form-group ">
+          <input name="msg" autocomplete="off"  class="form-control msgInput" ngModel/>
+        
+          <button class="btn  ms-2 text-white" style="background-color:darkblue ">Send</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>      
+</div>
